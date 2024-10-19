@@ -1,12 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <style>
+        .form {
+            border: 2px solid black;
+
+            width: 35%;
+        }
+
+        .name {
+            border-radius: 3px;
+            padding: 7px;
+            margin-left: 25px;
+        }
+    </style>
+
+
 </head>
+
 <body>
-    
+
+    <div>
+        <form class="form" action="">
+            <div>
+                <img style="margin-left: 25px;" src="logo.webp" alt="" width="100px" height="100px" align="left">
+                <br> <br> <br><br> <br>
+                <h3 style="margin-left: 25px;">Create your Google Account</h3>
+            </div>
+            <br>
+            <div>
+                <label for="firstname"></label>
+                <input class="name" type="text" id="firstname" placeholder="First Name">
+                <label for="lastname"></label>
+                <input class="name" type="text" id="lastname" placeholder="Last Name">
+
+            </div>
+            <br>
+            <br>
+            <div>
+                <label for="Email"></label>
+                <input class="name" type="email" name="email" id="Email" placeholder="Username">
+                <br>
+                <p style="margin-left: 25px;">You can use letter,number & periods</p>
+                <p style="color: rgb(36, 141, 177); margin-left: 25px;">Use my current email address instead</p>
+            </div>
+            <br>
+            <div>
+                <label for="pass"></label>
+                <input class="name" type="password" name="password" id="pass" placeholder="Password"
+                    value="showpassword">
+                <label for="pass"></label>
+                <input class="name" type="password" name="pass" id="pass" placeholder=" Confirm Password">
+                <br>
+                <p style="margin-left: 25px;"> use 8 or more letters with max of letters,numbers &
+                    symbols</p>
+            </div>
+            <div>
+                <input style="margin-left: 25px;" type="checkbox" id="showpassword" placeholder="ShowPassword">
+                <label for="showpassword"> ShowPassword</label>
+
+            </div>
+            <div>
+                <p style="color: rgb(36, 141, 177); margin-left: 25px;">Sign in instead</p>
+            </div>
+            <div>
+                <center>
+                    <input
+                        style="background-color: rgb(36, 141, 177);  color: white; border: none; border-radius: 5px; padding: 3px 12px;"
+                        type="submit" value="Next">
+                </center>
+
+            </div>
+
+
+
+        </form>
+    </div>
 </body>
+
 </html>
